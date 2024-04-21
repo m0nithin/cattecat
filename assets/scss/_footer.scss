@@ -1,0 +1,91 @@
+.footer {
+  background: #1d261c;
+  padding: 40px 0;
+  // .footer__container
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+
+    @media screen and (max-width: 640px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  // .footer__col
+
+  &__col {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    color: #b6cbb3;
+
+    @media screen and (max-width: 640px) {
+      align-items: center;
+      gap: 16px;
+    }
+
+    .footer__socials {
+      display: none;
+
+      @media screen and (max-width: 640px) {
+        display: flex;
+      }
+    }
+  }
+
+  // .footer__logo
+
+  &__logo {
+    font-size: 44px;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  // .footer__socials
+
+  &__socials {
+    display: flex;
+    gap: 16px;
+
+    @media screen and (max-width: 640px) {
+      display: none;
+    }
+  }
+
+  // .footer__btn
+
+  &__btn {
+    color: #334131;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 24px;
+    background: url(/assets/img/footer/footer-button-background.svg) center
+      center no-repeat;
+    background-size: contain;
+    padding: 19px 32px;
+    text-decoration: none;
+    gap: 12px;
+
+    // .footer__btn_sm
+
+    &_sm {
+      background: url(/assets/img/footer/footer-button-background_sm.svg) center
+        center no-repeat;
+      background-size: contain;
+    }
+  }
+
+  // .footer__copyright
+
+  &__copyright {
+    font-size: 18px;
+  }
+}

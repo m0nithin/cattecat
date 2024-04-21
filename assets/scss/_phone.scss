@@ -1,0 +1,121 @@
+.phone {
+  position: relative;
+  // .phone__background
+
+  &__background {
+    position: relative;
+    z-index: 10;
+    pointer-events: none;
+  }
+
+  // .phone__container
+
+  &__container {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding: 30px;
+
+    @media screen and (max-width: 400px) {
+      padding: 20px;
+    }
+  }
+
+  // .phone__top
+
+  &__top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #fb2929;
+  }
+
+  // .phone__avatar
+
+  &__avatar {
+    width: 48px;
+    height: 48px;
+    display: block;
+    object-fit: cover;
+  }
+
+  // .phone__body
+
+  &__body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    overflow: hidden;
+    justify-content: flex-end;
+    padding-bottom: 100px;
+  }
+
+  // .phone__tokenomics
+
+  &__tokenomics {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    background: url('/assets/img/tokenomics/tokenomics-item-background.svg')
+      center center no-repeat;
+    background-size: contain;
+    height: 68px;
+    padding: 16px;
+    width: 100%;
+
+    span {
+      font-size: 18px;
+    }
+    strong {
+      font-size: 32px;
+    }
+  }
+
+  // .phone__bottom
+
+  &__bottom {
+    flex-shrink: 0;
+  }
+
+  // .phone__button
+
+  &__button {
+    color: #000;
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 24px;
+    padding: 16px;
+
+    // .phone__button_red
+
+    &_red {
+      background: url('/assets/img/tokenomics/button-background_red.svg') center
+        center no-repeat;
+      background-size: contain;
+    }
+
+    // .phone__button_blue
+
+    &_blue {
+      background: url('/assets/img/tokenomics/button-background_blue.svg')
+        center center no-repeat;
+      background-size: contain;
+    }
+  }
+}

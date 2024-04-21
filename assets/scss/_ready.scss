@@ -1,0 +1,146 @@
+.ready {
+  background: url('/assets/img/ready/ready-background-animated.gif') 25vw top
+      no-repeat,
+    #334131;
+  position: relative;
+  padding: 180px 0;
+
+  @media screen and (max-width: 1300px) {
+    background: url('/assets/img/ready/ready-background-animated.gif') 10vw top
+        no-repeat,
+      #334131;
+  }
+  @media screen and (max-width: 1023.98px) {
+  }
+
+  &__top {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    pointer-events: none;
+  }
+
+  // .ready__container
+
+  &__container {
+  }
+
+  &__col {
+    display: flex;
+    flex-direction: column;
+    max-width: 720px;
+    width: 100%;
+    gap: 32px;
+    color: #b6cbb3;
+  }
+
+  // .ready__title
+
+  &__title {
+    font-size: 74px;
+    line-height: 80%;
+    max-width: 540px;
+    transform: rotate(-4deg);
+
+    @media screen and (max-width: 1023.98px) {
+      font-size: 64px;
+    }
+    @media screen and (max-width: 767.98px) {
+      font-size: 52px;
+    }
+  }
+
+  // .ready__text
+
+  &__text {
+    font-size: 24px;
+    transform: rotate(-4deg);
+
+    @media screen and (max-width: 1023.98px) {
+      font-size: 20px;
+    }
+    @media screen and (max-width: 767.98px) {
+      font-size: 18px;
+    }
+  }
+
+  // .ready__contract
+
+  &__contract {
+  }
+}
+
+.contract {
+  position: relative;
+  height: 140px;
+
+  @media screen and (max-width: 767.98px) {
+    height: 25vw;
+  }
+
+  // .contract__background
+
+  &__background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    pointer-events: none;
+  }
+
+  // .contract__value
+
+  &__value {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    font-size: 32px;
+    color: #334131;
+    text-wrap: nowrap;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px;
+    text-align: left;
+    gap: 0;
+
+    @media screen and (max-width: 767.98px) {
+      font-size: 4vw;
+    }
+  }
+
+  &__label {
+    font-size: 24px;
+    @media screen and (max-width: 767.98px) {
+      font-size: 3vw;
+    }
+  }
+
+  // .contract__copy
+
+  &__copy {
+    position: absolute;
+    z-index: 10;
+    right: -20px;
+    bottom: -24px;
+    background: url('/assets/img/ready/ready-copy-button-background.svg') center
+      center no-repeat;
+    background-size: contain;
+    font-size: 24px;
+    padding: 16px 32px;
+    border: none;
+    transform: rotate(-4deg);
+
+    @media screen and (max-width: 767.98px) {
+      padding: 2vw 3vw;
+      font-size: 3vw;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,274 @@
+.hero {
+  background: url('/assets/img/hero/hero-background.jpg') center bottom
+    no-repeat;
+  background-size: cover;
+  position: relative;
+
+  &::after {
+    display: block;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    width: 100%;
+    top: 100%;
+    height: 200px;
+    background: #fbd26f;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    justify-content: space-between;
+  }
+
+  // .hero__container
+
+  &__container {
+    padding-top: 100px;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 1600px) {
+      padding-top: 0;
+    }
+    @media screen and (max-width: 1440px) {
+      padding-top: 50px;
+    }
+    @media screen and (max-width: 1023.98px) {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  }
+
+  // .hero__cat
+
+  &__cat {
+    width: 60%;
+    flex-shrink: 0;
+    position: relative;
+    transform: translateY(100px);
+    margin-top: auto;
+
+    @media screen and (max-width: 1600px) {
+      width: 55%;
+    }
+    @media screen and (max-width: 1440px) {
+      transform: none;
+    }
+    @media screen and (max-width: 1023.98px) {
+      max-width: 640px;
+      width: 100%;
+      margin-top: 100px;
+    }
+  }
+
+  // .hero__message
+
+  &__message {
+    position: absolute;
+    right: 150px;
+    top: -200px;
+
+    @media screen and (max-width: 1600px) {
+      transform: scale(0.6) translateY(100px);
+    }
+    @media screen and (max-width: 1440px) {
+      right: 0;
+      transform: scale(0.6) translateY(50px) translateX(-100px);
+    }
+    @media screen and (max-width: 1280px) {
+      transform: scale(0.6) translateY(50px) translateX(-50px);
+    }
+    @media screen and (max-width: 767.98px) {
+      transform: scale(0.8) translateY(50px) translateX(100px);
+    }
+    @media screen and (max-width: 500px) {
+      transform: scale(0.8) translateY(75px) translateX(50px);
+    }
+  }
+
+  // .hero__col
+
+  &__col {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 140px;
+    @media screen and (max-width: 1600px) {
+      margin-bottom: 40px;
+    }
+    @media screen and (max-width: 1440px) {
+      margin-bottom: 90px;
+    }
+    @media screen and (max-width: 1023.98px) {
+      align-items: center;
+      margin-bottom: 0;
+    }
+  }
+
+  // .hero__suptitle
+
+  &__suptitle {
+    max-width: 140px;
+    width: 100%;
+  }
+
+  // .hero__title
+
+  &__title {
+    text-shadow: rgb(16, 22, 26) 3px 0px 0px,
+      rgb(16, 22, 26) 2.83487px 0.981584px 0px,
+      rgb(16, 22, 26) 2.35766px 1.85511px 0px,
+      rgb(16, 22, 26) 1.62091px 2.52441px 0px,
+      rgb(16, 22, 26) 0.705713px 2.91581px 0px,
+      rgb(16, 22, 26) -0.287171px 2.98622px 0px,
+      rgb(16, 22, 26) -1.24844px 2.72789px 0px,
+      rgb(16, 22, 26) -2.07227px 2.16926px 0px,
+      rgb(16, 22, 26) -2.66798px 1.37182px 0px,
+      rgb(16, 22, 26) -2.96998px 0.42336px 0px,
+      rgb(16, 22, 26) -2.94502px -0.571704px 0px,
+      rgb(16, 22, 26) -2.59586px -1.50383px 0px,
+      rgb(16, 22, 26) -1.96093px -2.27041px 0px,
+      rgb(16, 22, 26) -1.11013px -2.78704px 0px,
+      rgb(16, 22, 26) -0.137119px -2.99686px 0px,
+      rgb(16, 22, 26) 0.850987px -2.87677px 0px,
+      rgb(16, 22, 26) 1.74541px -2.43999px 0px,
+      rgb(16, 22, 26) 2.44769px -1.73459px 0px,
+      rgb(16, 22, 26) 2.88051px -0.838247px 0px, rgb(16, 22, 26) 2px 5px 0px;
+    color: #ffb627;
+    font-size: 100px;
+    line-height: 90%;
+    margin: 60px 0;
+
+    span {
+      display: inline-block;
+      color: #10161a;
+      padding: 8px 31px 21px 31px;
+      background: #ffb627;
+      border: 6px solid #10161a;
+      box-shadow: 2px 5px 0px #10161a;
+      border-radius: 16px;
+      text-shadow: none;
+      font-size: 128px;
+      line-height: 70%;
+      margin-top: 8px;
+    }
+
+    @media screen and (max-width: 1440px) {
+      font-size: 72px;
+      span {
+        font-size: 92px;
+      }
+    }
+    @media screen and (max-width: 1023.98px) {
+      margin: 30px 0 60px 0;
+      text-align: center;
+    }
+    @media screen and (max-width: 500px) {
+      font-size: 15vw;
+      margin: 30px 0 40px 0;
+
+      span {
+        padding: 8px 16px 21px 16px;
+        font-size: 20vw;
+      }
+    }
+  }
+
+  // .hero__row
+
+  &__row {
+    align-items: center;
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 1023.98px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+  }
+
+  // .hero__btn
+
+  &__btn {
+    font-size: 36px;
+    color: #000;
+    text-decoration: none;
+    border: none;
+    padding: 24px 32px;
+    line-height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    // .hero__btn_lg
+
+    &_lg {
+      background: url('/assets/img/hero/hero-btn-bg_lg.svg') center center
+        no-repeat;
+      background-size: contain;
+      padding: 30px 50px;
+    }
+
+    // .hero__btn_sm
+
+    &_sm {
+      background: url('/assets/img/hero/hero-btn-bg_sm_1.svg') center center
+        no-repeat;
+      background-size: contain;
+
+      &:nth-child(2) {
+        background: url('/assets/img/hero/hero-btn-bg_sm_2.svg') center center
+          no-repeat;
+        background-size: contain;
+      }
+      &:nth-child(3) {
+        background: url('/assets/img/hero/hero-btn-bg_sm_3.svg') center center
+          no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+
+  // .hero__socials
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+}
+
+.hero-message {
+  // .hero-message__background
+
+  &__background {
+  }
+
+  // .hero-message__text
+
+  &__text {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    line-height: 100%;
+    text-align: center;
+    padding: 0 0 100px 0;
+    white-space: pre-wrap;
+
+    @media screen and (max-width: 500px) {
+      font-size: 32px;
+      padding: 0 0 70px 0;
+    }
+  }
+}

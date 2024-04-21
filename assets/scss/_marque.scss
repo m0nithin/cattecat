@@ -1,0 +1,30 @@
+.marque {
+  width: 100%;
+  overflow: hidden;
+  background: #1b1a24;
+  color: #363544;
+  font-size: 32px;
+  padding: 12px 0;
+
+  div {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    width: max-content;
+    text-wrap: nowrap;
+    animation: marque 360s linear infinite both;
+  }
+
+  @media screen and (max-width: 1023.98px) {
+    font-size: 24px;
+  }
+}
+
+@keyframes marque {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

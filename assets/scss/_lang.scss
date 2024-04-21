@@ -1,0 +1,66 @@
+.lang {
+  position: relative;
+  max-width: max-content;
+
+  @media screen and (max-width: 1024px) {
+    &_active {
+      .lang__list {
+        opacity: 1;
+        transform: translateY(0);
+        visibility: visible;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    &:hover {
+      .lang__list {
+        opacity: 1;
+        transform: translateY(0);
+        visibility: visible;
+      }
+    }
+  }
+
+  &__icon {
+    color: #ffb627;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+  }
+  &__list {
+    visibility: hidden;
+    background: #fff;
+    padding: 8px 0;
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    border-radius: 12px;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    opacity: 0;
+    transform: translateY(10%);
+    transition: opacity 200ms, transform 200ms;
+  }
+  &__item {
+    cursor: pointer;
+    padding: 8px 24px;
+    font-size: 24px;
+    color: #000;
+    text-decoration: none;
+    transition: color 200ms;
+    a,
+    p,
+    span,
+    div {
+      color: inherit;
+      text-decoration: inherit;
+      transition: inherit;
+    }
+
+    &:hover {
+      color: #ffb627;
+    }
+  }
+}
