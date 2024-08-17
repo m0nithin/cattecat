@@ -199,7 +199,7 @@ button {
 }
 
 .hero {
-    background: url("/assets/img/hero/hero-background.png") center bottom no-repeat;
+    background: url("IMG_0151.jpg") center bottom no-repeat;
     background-size: cover;
     position: relative
 }
